@@ -27,24 +27,11 @@ def stock_count(count)
 end
 
 def pets_by_breed(pets_hash, breed_type)
-  # total_pets_by_breed = 0
   pets = []
-  # p pets_hash[:pets][0][:breed]
-  # p pets_hash[:pets].count
-
-  for pet in pets_hash[:pets]
-    if pet[:breed] == breed_type
-      pets.push(pet)
-      # p total_pets.length
-      # p pet[:breed]
-      # total_pets_by_breed = total_pets_by_breed + 1
-
-      # return total_pets_by_breed.to_i
+for pet in pets_hash[:pets]
+  if pet[:breed] == breed_type
+    pets.push(pet)
+    end
   end
-
-end
-# return total_pets_by_breed
-p pets
-return pets
-
+  return pets
 end
