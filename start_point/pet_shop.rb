@@ -35,3 +35,12 @@ for pet in pets_hash[:pets]
   end
   return pets
 end
+
+def find_pet_by_name(pets_hash, pet_name)
+  pets = []
+  for pet in pets_hash[:pets]
+    if pet[:name] == pet_name
+    return pet
+    end
+  end
+end
