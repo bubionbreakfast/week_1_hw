@@ -40,7 +40,17 @@ def find_pet_by_name(pets_hash, pet_name)
   pets = []
   for pet in pets_hash[:pets]
     if pet[:name] == pet_name
-    return pet
+      return pet
+    else
+      return nil
     end
   end
+end
+
+def add_pet_to_stock(pets_hash, add_pets_hash)
+  pets_hash[:pets] << add_pets_hash
+end
+
+def customer_cash(cash)
+  return cash[:cash]
 end
